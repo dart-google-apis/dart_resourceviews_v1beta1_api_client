@@ -210,8 +210,11 @@ class ResourceView {
   /** The detailed description of the resource view. */
   core.String description;
 
-  /** The ID of the resource view. For internal use only. */
+  /** [Output Only] The ID of the resource view. */
   core.String id;
+
+  /** Type of the resource. */
+  core.String kind;
 
   /** The labels for events. */
   core.List<Label> labels;
@@ -241,6 +244,9 @@ class ResourceView {
     }
     if (json.containsKey("id")) {
       id = json["id"];
+    }
+    if (json.containsKey("kind")) {
+      kind = json["kind"];
     }
     if (json.containsKey("labels")) {
       labels = json["labels"].map((labelsItem) => new Label.fromJson(labelsItem)).toList();
@@ -274,6 +280,9 @@ class ResourceView {
     }
     if (id != null) {
       output["id"] = id;
+    }
+    if (kind != null) {
+      output["kind"] = kind;
     }
     if (labels != null) {
       output["labels"] = labels.map((labelsItem) => labelsItem.toJson()).toList();
@@ -363,7 +372,7 @@ class ZoneViewsInsertResponse {
 /** The response to a list resource request. */
 class ZoneViewsListResourcesResponse {
 
-  /** The resources in the view. */
+  /** The full URL of resources in the view. */
   core.List<core.String> members;
 
   /** A token used for pagination. */
@@ -404,7 +413,7 @@ class ZoneViewsListResponse {
   /** A token used for pagination. */
   core.String nextPageToken;
 
-  /** The result that contains all resource views that meet the criteria . */
+  /** The result that contains all resource views that meet the criteria. */
   core.List<ResourceView> resourceViews;
 
   /** Create new ZoneViewsListResponse from JSON data */

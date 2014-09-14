@@ -176,10 +176,10 @@ class RegionViewsResource_ {
    *
    * [region] - The region name of the resource view.
    *
-   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 500, inclusive. (Default: 50)
-   *   Default: 50
+   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 5000, inclusive. (Default: 5000)
+   *   Default: 5000
    *   Minimum: 0
-   *   Maximum: 500
+   *   Maximum: 5000
    *
    * [pageToken] - Specifies a nextPageToken returned by a previous list request. This token can be used to request the next page of results from a previous list request.
    *
@@ -224,10 +224,10 @@ class RegionViewsResource_ {
    *
    * [resourceViewName] - The name of the resource view.
    *
-   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 500, inclusive. (Default: 50)
-   *   Default: 50
+   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 5000, inclusive. (Default: 5000)
+   *   Default: 5000
    *   Minimum: 0
-   *   Maximum: 500
+   *   Maximum: 5000
    *
    * [pageToken] - Specifies a nextPageToken returned by a previous list request. This token can be used to request the next page of results from a previous list request.
    *
@@ -484,10 +484,10 @@ class ZoneViewsResource_ {
    *
    * [zone] - The zone name of the resource view.
    *
-   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 500, inclusive. (Default: 50)
-   *   Default: 50
+   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 5000, inclusive. (Default: 5000)
+   *   Default: 5000
    *   Minimum: 0
-   *   Maximum: 500
+   *   Maximum: 5000
    *
    * [pageToken] - Specifies a nextPageToken returned by a previous list request. This token can be used to request the next page of results from a previous list request.
    *
@@ -532,10 +532,10 @@ class ZoneViewsResource_ {
    *
    * [resourceViewName] - The name of the resource view.
    *
-   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 500, inclusive. (Default: 50)
-   *   Default: 50
+   * [maxResults] - Maximum count of results to be returned. Acceptable values are 0 to 5000, inclusive. (Default: 5000)
+   *   Default: 5000
    *   Minimum: 0
-   *   Maximum: 500
+   *   Maximum: 5000
    *
    * [pageToken] - Specifies a nextPageToken returned by a previous list request. This token can be used to request the next page of results from a previous list request.
    *
